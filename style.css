@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Futura";
+    
+}
+:root {
+    --foreground: #000; /* Define your foreground color */
 }
 
 html,body{
@@ -72,13 +75,16 @@ body{
     
    
 }
-
+h1{
+    font-family: "Futura";
+}
 #page1 #heading{
     
      margin: auto;   
     width: 98vw;
     padding-left: 1.5vw;
     margin-top: 35vh;
+    
 
    
 }
@@ -196,6 +202,9 @@ body{
     outline: none;
     border: none;
     background: transparent;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 3px;
     border-bottom: 1px solid black;
     
 }
@@ -240,6 +249,43 @@ body{
     margin-top: 5px;
 
 
+
+
+    
+}
+
+#footer{
+    padding:100px 10px;
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     
+}
+.para{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.footer-div{
+    display: flex;
+    
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.footer-div p{
+    color: rgb(94, 81, 81);
+    font-size: 12px;
+}
+.footer-div span{
+    font-size: 14px;
 }
 @media (max-width:768px) {
     #page1{
@@ -303,6 +349,14 @@ body{
    #nav-right ul{
      
       display: none;
+   }
+   
+   .footer-div{
+    width: 100%;
+    margin: 20px;
+   }
+   .para{
+    width: 100%;
    }
 }
 

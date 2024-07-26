@@ -1,8 +1,17 @@
 
+
 function navbarAnimation() {
+    gsap.from("#nav",{
+        opacity:0,
+        y:50,
+        delay:0.3,
+        duration:0.5,
+    })
+   
+
     
     gsap.registerPlugin(ScrollTrigger);
-
+  
     gsap.to("#nav-left svg", {
         y: "-100%",
        
